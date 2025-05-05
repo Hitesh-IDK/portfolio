@@ -285,7 +285,7 @@ export default function AboutPage() {
       </section>
 
       {/* Professional journey */}
-      <section className="section-padding bg-gray-50 dark:bg-gray-900 animate-in">
+      <section className="section-padding bg-gray-50 dark:bg-gray-900 animate-in overflow-hidden">
         <div className="container-padding mx-auto">
           <h2 className="text-3xl font-display font-bold mb-12 text-center">
             Professional <span className="title-gradient">Journey</span>
