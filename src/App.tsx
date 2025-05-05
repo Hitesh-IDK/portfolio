@@ -67,8 +67,8 @@ function App() {
 
   return (
     <ThemeProvider>
-      <MouseParticles />
-      <CustomCursor />
+      {/* <MouseParticles />
+      <CustomCursor /> */}
       <ScrollToTop />
       <div className="flex min-h-screen flex-col">
         <Header />

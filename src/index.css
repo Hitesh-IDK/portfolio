@@ -16,9 +16,9 @@
   }
 
   /* Hide cursor on interactive elements */
-  a, button, .btn-primary, .btn-outline {
+  /* a, button, .btn-primary, .btn-outline {
     cursor: none;
-  }
+  } */
 
   /* Scrollbar styling */
   ::-webkit-scrollbar {
