@@ -344,7 +344,7 @@ export default function AboutPage() {
                     Software Development Intern
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 text-sm mb-1">
-                    InnovateLab
+                    DigiPlusIT
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
                     My foundational experience in backend and frontend
@@ -409,7 +409,7 @@ export default function AboutPage() {
                     GenAI Cohort Member
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 text-sm mb-1">
-                    Tech University
+                    Tech Course
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
                     Active participation in the 100xEngineer's GenAI cohort,
