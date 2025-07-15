@@ -44,7 +44,7 @@ export default function ProjectsPage() {
           y: 100,
           opacity: 0,
           duration: 0.8,
-          delay: 0.1 + i * 0.1,
+          delay: 0.1,
           scrollTrigger: {
             trigger: card,
             start: "top bottom-=50",
@@ -89,7 +89,7 @@ export default function ProjectsPage() {
             y: 0,
             opacity: 1,
             duration: 0.4,
-            delay: i * 0.05,
+            delay: 0.05,
             ease: "power2.out",
           }
         );
