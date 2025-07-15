@@ -10,17 +10,12 @@ import {
   Server,
   Globe,
   Terminal,
-  Gauge,
-  Sparkles,
   Rocket,
-  Coffee,
   Brain,
   Lock,
   Laptop,
-  Palette,
   Lightbulb,
   Heart,
-  Star,
 } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -110,7 +105,7 @@ export default function AboutPage() {
       });
 
       // Animate skill cards with stagger and hover effect
-      const skillCards = gsap.utils.toArray(".skill-category");
+      const skillCards = gsap.utils.toArray(".skill-category") as Element[];
       skillCards.forEach((card: Element) => {
         const bars = card.querySelectorAll(".skill-bar");
 
@@ -320,7 +315,7 @@ export default function AboutPage() {
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
                     Currently pursuing a BE in Information Science, with a
-                    strong academic performance (8.45 CGPA)
+                    strong academic performance (8.53 CGPA)
                   </p>
                 </div>
               </div>
@@ -361,6 +356,36 @@ export default function AboutPage() {
               <div className="timeline-item relative">
                 <div className="flex items-center justify-center mb-4">
                   <div className="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center text-white z-10">
+                    <Laptop className="w-5 h-5" />
+                  </div>
+                </div>
+
+                <div className="text-center mb-4">
+                  <span className="text-sm font-medium bg-primary-100 dark:bg-primary-900 text-primary-800 dark:text-primary-200 rounded-full px-3 py-1">
+                    2023 - 2025
+                  </span>
+                </div>
+
+                <div className="card max-w-lg mx-auto">
+                  <h3 className="text-xl font-display font-bold mb-2">
+                    Basshub LocateUs
+                  </h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-1">
+                    Full stack developer
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Led frontend and backend development of DroghersHub, an
+                    e-commerce platform supporting 1,000+ concurrent users.
+                    Implemented smart movie recommendation engine (Moovi) using
+                    FastAPI and deployed scalable APIs on Azure.
+                  </p>
+                </div>
+              </div>
+
+              {/* Item 4 */}
+              <div className="timeline-item relative">
+                <div className="flex items-center justify-center mb-4">
+                  <div className="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center text-white z-10">
                     <Database className="w-5 h-5" />
                   </div>
                 </div>
@@ -390,7 +415,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* Item 4 */}
+              {/* Item 5 */}
               <div className="timeline-item relative">
                 <div className="flex items-center justify-center mb-4">
                   <div className="w-10 h-10 bg-primary-500 rounded-full flex items-center justify-center text-white z-10">
@@ -409,12 +434,12 @@ export default function AboutPage() {
                     GenAI Cohort Member
                   </h3>
                   <p className="text-gray-600 dark:text-gray-400 text-sm mb-1">
-                    Tech Course
+                    AI Engineer
                   </p>
                   <p className="text-gray-700 dark:text-gray-300">
                     Active participation in the 100xEngineer's GenAI cohort,
-                    which sharpened my AI fundamentals and product-building
-                    mindset.
+                    where as a community we built and experimented with LLMs, AI
+                    tools, RAG, multi AI agents, LLM fine tuining and much more.
                   </p>
                 </div>
               </div>
@@ -435,7 +460,7 @@ export default function AboutPage() {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {skillCategories.map((category, index) => (
+            {skillCategories.map((category) => (
               <div
                 key={category.name}
                 className="skill-category card hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
